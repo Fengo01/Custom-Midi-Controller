@@ -1,60 +1,66 @@
 # Custom-Midi-Controller
 
-I Want to build a Midi Controller, that i can use on any PC, to controll my personal Room, DMX Lights via DMXC3 or maybe Virtual Dj or Voicemeeter or some of these Stuff
+I want to build a MIDI controller that I can use on any PC to control my personal room setup, DMX lights via DMXControl 3, or maybe software like Virtual DJ or Voicemeeter.
 
 
 
-Progress 12.12.2025:
-
-\# First thougts and parts i  want to use
+---
 
 
 
-\## Parameters for the Projekt
-
-\- 10 motorized Fader --> Slide Potentiometer
-
-\- 10 small SPI-Statusdiplays
-
-\- 10.1″ Waveshare DSI-Touchdisplay
-
-\- Buttons and Rotary Potentiometers
-
-\- USB-Out to (MIDI/OSC)
+\## Progress (12.12.2025)
 
 
 
-\## Options for Microcontrollers
-
-\- \*\*ESP32\*\*: USB-OTG, great for Controlling, Software and Connectors to Parts.
-
-\- \*\*ESP32-P4\*\*: DSI-Support, 32 MB RAM, USB-OTG, Great for the Touchdisplay, Software and Connectors to Parts.
-
-\- \*\*Teensy 4.1\*\*: many GPIOs, fast, great for Pherepherie, but no DSI.
-
-\- \*\*RP2040\*\*: cheap, many GPIOs → Budget-Option for Peripherie, but no DSI.
+\### First thoughts and parts I want to use
 
 
 
-\## First Decision
+\#### Parameters for the project
 
-\- ESP32-P4 as Main-Controller for GUI and DSI-Display.
+\- 10 motorized faders (slide potentiometers)
 
-\- Secound Controller (ESP32, RP2040 or Teensy) for Fader, Buttons, Encoder and SPI-Displays.
+\- 10 small SPI status displays
 
-\- Communication over USB-MIDI or I²C/SPI-Bridge or Serial Networking.
+\- 10.1″ Waveshare DSI touch display
+
+\- Buttons and rotary encoders
+
+\- USB output (MIDI/OSC)
 
 
 
-\## Parts i am going to use for the Projekt:
+\#### Options for microcontrollers
 
--- Slide Potentiometer: Behringer X32 Motor Fader
+\- \*\*ESP32\*\*: USB-OTG, good for controlling, software and connectors to parts
 
--- Big Touchdisplay: 10.1″ Waveshare DSI-Touchdisplay
+\- \*\*ESP32-P4\*\*: DSI support, 32 MB RAM, USB-OTG, great for the touch display
 
--- small SPI-Statusdiplays: 1.14 inch TFT LCD 135 x 240 interface SPI (Made by Senzooe)
+\- \*\*Teensy 4.1\*\*: many GPIOs, fast, great for periphery, but no DSI
 
--- ESP32-P4 as Main-Controller for GUI and DSI-Display
+\- \*\*RP2040\*\*: cheap, many GPIOs → budget option for periphery, but no DSI
 
--- If needed Secound Controller for additional Pins or Prozessing power
+
+
+\#### First decision
+
+\- ESP32-P4 as main controller for GUI and DSI display
+
+\- Second controller (ESP32, RP2040 or Teensy) for faders, buttons, encoders and SPI displays
+
+\- Communication over USB-MIDI, I²C/SPI bridge or serial networking
+
+
+
+\#### Parts I am going to use
+
+\- Motorized faders: Behringer X32 motor fader
+
+\- Touch display: 10.1″ Waveshare DSI touch display
+
+\- SPI status displays: 1.14″ TFT LCD 135×240 (Senzooe)
+
+\- ESP32-P4 as main controller for GUI and DSI display
+
+\- If needed: second controller for additional pins or processing power
 
